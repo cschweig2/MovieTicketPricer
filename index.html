@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Movie Ticket</title>
+  <title></title>
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Ticket</h1>
+    <hr>
+    <h2>Enter your ticket info:</h2>
+    <form id="ticketPrice">
+      <div class="form-group">
+        <label for="age">Enter your age</label>
+        <input type="text"  class="form-control" id="age" type="number" required>
+      </div>
+      <div class="form-group">
+        <select class="form-control" id="movie">
+          <option value="">Select the movie you want to see</option>
+          <option value="Borat Subsequent Moviefilm">Borat Subsequent Moviefilm</option>
+          <option value="Stillwater">Stillwater</option>
+          <option value="1917">1917</option>
+          <option value="Underwater">Underwater</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select class="form-control" id="time">
+          <option value="">Select the time for your ticket</option>
+          <option value="0">12pm</option>
+          <option value="2">2pm</option>
+          <option value="3">4pm</option>
+          <option value="4">6pm</option>
+        </select>
+      </div>
+      <button class="btn btn success">Submit</button>
+    </form>
+    <div id="newTicketPrice">
+    </div>
+  </div>
+</body>
+</html>
